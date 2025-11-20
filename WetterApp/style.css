@@ -1,0 +1,146 @@
+/* =========================
+   Base
+========================= */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: lightsteelblue;
+}
+
+/* =========================
+   section & container
+========================= */
+.container{
+    margin: 5vw;
+    padding: 20px;
+    background-color: rgba(249, 249, 249, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightsteelblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* =========================
+   Typo
+========================= */
+h1,p {
+    text-align: center;
+}
+
+span#place-name {
+    color: #135ebe;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div#weather-desc.desc {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p#error {
+    font-weight: bold;
+    color: red;
+}
+
+/* =========================
+   Icons
+========================= */
+img {
+    height: 20vw;
+}
+
+/* =========================
+   Ausrichtung
+========================= */
+#place-name,
+#weather-icon {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#additionalInformation{
+    text-align: center;
+}
+
+/* =========================
+   Formulare & Eingaben
+========================= */
+form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0 40px 0;
+}
+
+.field {
+    display: grid;
+    gap: .25rem;
+    margin-bottom: .75rem;
+}
+
+input {
+    padding: .5rem .6rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+}
+
+/* =========================
+   Button
+========================= */
+button {
+    background-color: #ffffff;
+    border: 1px solid rgb(209, 213, 219);
+    border-radius: 0.5rem;
+    color: #111827;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: #F8F8FF;
+}
+
+button:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+    outline-offset: 2px;
+}
+
+button:focus-visible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* =========================
+   verstecken
+========================= */
+.hidden {
+    display: none;
+}

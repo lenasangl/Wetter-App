@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wetter App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div class="container">
+<!--### Input-Abfragen von Nutzer ###-->
+
+    <h1>Wetter App</h1>
+    <p>Bitte geben Sie PLZ und/oder Ort ein, um das Wetter abzufragen.</p>
+
+    <form id="search-form" autocomplete="on">
+
+        <div>
+            <label for="zipInput">PLZ:</label>
+            <input id="zipInput" name="postal" type="text" inputmode="numeric" pattern="\d*" maxlength="5" placeholder="PLZ eingeben">
+        </div>
+
+        <div>
+            <label for="cityInput">Stadt:</label>
+            <input id="cityInput" name="city" type="text" placeholder="Stadt eingeben">
+        </div>
+
+        <button type="submit">Suchen</button>
+
+    </form>
+
+<!--### mögliche Fehler durch die Eingabe ###-->
+
+    <p id="error" role="alert" aria-live="polite" class="hidden"></p>
+
+<!--### Wetter Ausgabe ###-->
+
+    <section id="weather-result" class="hidden card" aria-live="polite">
+        <div>
+            <span id="place-name"></span>
+        </div>
+        <div class="weather-row">
+            <span id="weather-icon" class="icon" aria-hidden="true">☀️</span>
+            <div id="additionalInformation">
+                <div id="weather-desc" class="desc">–</div>
+                <div id="temperature" class="temp">– °C</div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
